@@ -1,0 +1,40 @@
+.UserCard {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ActivityCard {
+  width: 280px;
+  padding: 20px;
+  background: radial-gradient(circle, #ff512f, #dd2476);
+  color: white;
+  text-align: center;
+  font-family: sans-serif;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(255, 117, 140, 0.3);
+  transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.ActivityCard:hover {
+  box-shadow: 0 6px 25px rgba(255, 117, 140, 0.6);
+  transform: translateY(-5px);
+  opacity: 0.7;
+}
+
+.ActivityCard::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 15px;
+  border-width: 10px;
+}
+
+.created_at {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  color: gray;
+  opacity: 0.6;
+}
